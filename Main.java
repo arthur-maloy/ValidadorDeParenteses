@@ -27,7 +27,7 @@ public class Main {
      */
     public static void main(String[] args) throws FileNotFoundException, IOException {
         Stack<Character> stack;
-        InputStream inputstream = new FileInputStream("C:\\Users\\Arthur\\Documents\\NetBeansProjects\\entradaDados.txt");
+        InputStream inputstream = new FileInputStream("entradaDados.txt");
         InputStreamReader reader = new InputStreamReader(inputstream);
         BufferedReader br = new BufferedReader(reader);
 
