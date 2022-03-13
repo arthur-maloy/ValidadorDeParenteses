@@ -39,7 +39,7 @@ public class Main {
             validador = true;
             for (char letra : linha.toCharArray()) {
 
-                System.out.println(letra);
+               
                 if (letra == '{'
                         || letra == '('
                         || letra == '['
@@ -49,7 +49,7 @@ public class Main {
                 } else {
                     if (stack.empty()) {
                         validador = false;
-                        System.out.println("Entrei aqui " + letra);
+                       
                     } else {
                         if (letra == ')' && stack.peek() != '(') {
                             validador = false;
@@ -66,7 +66,7 @@ public class Main {
                     }
                 }
             }
-            System.out.println("---------------------------");
+           
             if (validador) {
                 listaParaRetornar.add(linha + " válido");
             } else {
